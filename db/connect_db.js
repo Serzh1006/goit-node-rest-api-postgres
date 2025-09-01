@@ -17,6 +17,7 @@ try {
   console.log("Database connection successfully!");
 } catch (error) {
   console.log(`Database connection error ${error.message}`);
+  process.exit(1);
 }
 
 export default sequelize;
